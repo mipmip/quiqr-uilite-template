@@ -1,0 +1,132 @@
+- key: images
+  description: global images
+  _mergePartial: https://raw.githubusercontent.com/quiqr/model-partials/main/singles/global-images.yml
+
+- key: etalage
+  _mergePartial: etalage
+
+- key: readme
+  _mergePartial: readme
+
+- key: dashboard
+  _mergePartial: dashboard
+
+- key: dataServices
+  file: data/services.json
+  title: Services
+  fields:
+    - key: title
+      type: string
+    - key: services
+      title: Services
+      type: accordion
+      fields:
+      - arrayTitle: true
+        key: title
+        title: Title
+        type: string
+      - key: icon
+        title: Icon
+        tip: enter the name of the [font awesome icon](https://fontawesome.com/v5/search)
+        type: string
+      - key: description
+        title: Description
+        type: string
+
+- key: dataSkills
+  file: data/skills.json
+  title: Skills
+  fields:
+    - key: title
+      type: string
+
+    - key: skills
+      title: Skills
+      type: accordion
+      fields:
+      - arrayTitle: true
+        key: key
+        title: Name
+        type: string
+      - key: value
+        title: value
+        type: slider
+        max: 100
+        min: 0
+        step: 1
+
+- key: dataExperience
+  file: data/experience.json
+  title: Experience
+  fields:
+    - key: title
+      type: string
+
+    - key: experience
+      title: Experience
+      type: accordion
+      fields:
+      - arrayTitle: true
+        key: timeperiod
+        title: Time Period
+        type: string
+      - key: company
+        title: Company
+        type: string
+      - key: website
+        title: Website
+        type: string
+      - key: description
+        title: Description
+        type: string
+
+
+- key: dataSidebar
+  file: data/sidebar.json
+  title: Sidebar
+  fields:
+    - key: title
+      type: string
+
+    - key: highlightedText
+      type: string
+
+    - key: description
+      type: string
+
+    - key: displayPicture
+      type: string
+      tip: enter the name of an image without a path
+
+- key: dataConfig
+  file: data/config.json
+  title: Config
+  fields:
+    - key: author
+      type: string
+
+    - key: email
+      type: string
+
+    - key: formspree
+      type: string
+
+- key: dataSocial
+  file: data/social.json
+  title: Social
+  fields:
+    - key: facebook
+      type: string
+    - key: instagram
+      type: string
+    - key: dribbble
+      type: string
+    - key: behance
+      type: string
+
+- key: dataSocialfas
+  file: data/socialfas.json
+  title: Email
+  fields:
+    - key: envelope
+      type: string

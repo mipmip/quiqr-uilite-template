@@ -1,0 +1,26 @@
+hugover = "0.101.0"
+
+[[serve]]
+key = "default"
+config = "config.toml"
+
+[[build]]
+key = "default"
+config = "config.toml"
+
+[[singles]]
+key = "mainConfig"
+title = "Site Configuration"
+file = "config.toml"
+
+  [[singles.fields]]
+  key = "title"
+  title = "Site Title"
+  type = "string"
+  tip = "Your page title."
+
+  [[singles.fields]]
+  key = "baseURL"
+  title = "Base URL"
+  type = "string"
+  tip = "Your site URL."
