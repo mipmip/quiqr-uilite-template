@@ -5,7 +5,7 @@
 
 Hugo UILite portfolio template as Quiqr Remix
 
-
+[Demo](https://mipmip.github.io/quiqr-uilite-template/)
 
 
 
